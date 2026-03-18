@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:16
+    container_name: postgres-clinica
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres    
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  server-app:
+    build: ./Server-module
+    container_name: server-clinica
+    depends_on:
+      - db
+    ports:
+      - "8080:8080" 
+    environment:
+      JDBC_URL: jdbc:postgresql://db:5432/postgres 
+
+volumes:
+  postgres_data:
