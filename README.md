@@ -1,12 +1,4 @@
 # Medical Clinic Management System
-<<<<<<< HEAD
-**A robust Java OOP backend demonstrating Hibernate ORM integration and PostgreSQL persistence.**
-
-## Project Overview
-This repository contains a specialized Java application developed to manage medical clinic operations. It focuses on implementing a clean **Object-Oriented** architecture to handle core entities, ensuring data integrity through a relational database.
-
-## Tech Stack
-=======
 
 **A robust Java OOP backend demonstrating Hibernate ORM integration and PostgreSQL persistence.**
 
@@ -18,21 +10,12 @@ This repository contains a specialized Java application developed to manage medi
 
 ## Tech Stack
 
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)
 * **Language:** Java 25
 * **Framework:** Hibernate ORM (JPA)
 * **Database:** PostgreSQL
 * **Containerization:** Docker (Separate server container & database container)
 * **Build Tool:** Maven
 
-<<<<<<< HEAD
-* ## How to Run
-* Open a Terminal and navigate to the root folder
-* Set up the environment using docker:
-    docker-compose up --build --quiet-pull
-* Open another Terminal and navigate to /Client-module
-* Run the Java Client side in the Terminal:
-=======
 
 ## How to Run
 
@@ -43,7 +26,6 @@ This repository contains a specialized Java application developed to manage medi
   ```
 * Open another Terminal and and Run the Java Client side:
 
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)
   **Windows (PowerShell):**
   ```powershell
   .\mvnw.cmd exec:java -pl Client-module "-Dexec.mainClass=Client.`$Terminal"
@@ -51,10 +33,6 @@ This repository contains a specialized Java application developed to manage medi
   **Linux :**
   ```bash
   chmod +x mvnw
-<<<<<<< HEAD
-  ./mvnw exec:java -pl Client-module "-Dexec.mainClass=Client.\$Terminal"
-  ```    
-=======
   ./mvnw exec:java -pl Client-module '-Dexec.mainClass=Client.$Terminal'
   ```    
 
@@ -106,4 +84,3 @@ Password: 2222
 0. Log out
 
 ```
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)

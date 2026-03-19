@@ -9,14 +9,11 @@ services:
       POSTGRES_DB: postgres    
     ports:
       - "5433:5432"
-<<<<<<< HEAD
-=======
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
       timeout: 5s
       retries: 5
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -26,12 +23,8 @@ services:
       dockerfile: Server-module/Dockerfile
     container_name: server-clinica
     depends_on:
-<<<<<<< HEAD
-      - db
-=======
       db:
         condition: service_healthy
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)
     ports:
       - "8080:8080" 
     environment:
@@ -41,9 +34,5 @@ services:
     restart: always
 
 volumes:
-<<<<<<< HEAD
-  postgres_data:
-=======
   postgres_data:
   
->>>>>>> a957afa (refactor: Docker db-healthcheck & ReadMe update)
