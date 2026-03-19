@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This repository contains a specialized Java application developed to manage medical clinic operations. It focuses on implementing a clean **Object-Oriented** architecture to handle core entities, ensuring data integrity through a relational database.
+This repository contains a university Java application developed to manage medical clinic operations. It focuses on implementing a clean **Object-Oriented** architecture to handle core entities, ensuring data integrity through a relational database.
 
 
 ## Tech Stack
@@ -19,12 +19,12 @@ This repository contains a specialized Java application developed to manage medi
 
 ## How to Run
 
-* Open a Terminal and navigate to the root folder
-* Set up the environment using docker:
+1. Open a Terminal and navigate to the root folder
+2. Set up the environment using docker:
   ```powershell
   docker-compose up --build -d
   ```
-* Open another Terminal and and Run the Java Client side:
+3. Open another Terminal and Run the Java Client side:
 
   **Windows (PowerShell):**
   ```powershell
