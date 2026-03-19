@@ -12,8 +12,10 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  server-app:
-    build: ./Server-module
+  server-app:      
+    build: 
+      context: .
+      dockerfile: Server-module/Dockerfile
     container_name: server-clinica
     depends_on:
       - db
@@ -21,6 +23,9 @@ services:
       - "8080:8080" 
     environment:
       JDBC_URL: jdbc:postgresql://db:5432/postgres 
+    stdin_open: true 
+    tty: true        
+    restart: always
 
 volumes:
   postgres_data:

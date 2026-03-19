@@ -17,9 +17,12 @@ This repository contains a specialized Java application developed to manage medi
     docker-compose up --build --quiet-pull
 * Open another Terminal and navigate to /Client-module
 * Run the Java Client side in the Terminal:
-    ** Windows (PowerShell): **
-      .\mvnw.cmd exec:java -pl Client-module "-Dexec.mainClass=Client.\`$Terminal"
-    ** Linux : **
-      chmod +x mvnw
-      ./mvnw exec:java -pl Client-module "-Dexec.mainClass=Client.\$Terminal"
-      
+  **Windows (PowerShell):**
+  ```powershell
+  .\mvnw.cmd exec:java -pl Client-module "-Dexec.mainClass=Client.`$Terminal"
+  ```
+  **Linux :**
+  ```bash
+  chmod +x mvnw
+  ./mvnw exec:java -pl Client-module "-Dexec.mainClass=Client.\$Terminal"
+  ```    
